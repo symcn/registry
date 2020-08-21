@@ -312,12 +312,8 @@ func (r *zkRegistry) getCloseListener(conf *common.URL) (*RegistryConfigurationL
 }
 
 func (r *zkRegistry) ConnectState() bool {
-	r.cltLock.Lock()
-	defer r.cltLock.Unlock()
-
-	if r.client == nil {
-		return false
+	if r.client != nil && r.client.Conn != nil && r.client.Conn.State() == zk.StateHasSession {
+		return true
 	}
-
-	return r.client.Conn.State() == zk.StateHasSession
+	return false
 }
