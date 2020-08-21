@@ -29,10 +29,10 @@ import (
 	"time"
 
 	gxnet "github.com/dubbogo/gost/net"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
 )
 
 const (
@@ -471,4 +471,11 @@ func (r *BaseRegistry) WaitGroup() *sync.WaitGroup {
 // Done open for outside to listen the event of registry Destroy() called.
 func (r *BaseRegistry) Done() chan struct{} {
 	return r.done
+}
+
+func (r *BaseRegistry) ConnectState() bool {
+	r.cltLock.Lock()
+	defer r.cltLock.Unlock()
+
+	return r.facadeBasedRegistry.ConnectState()
 }

@@ -18,9 +18,9 @@
 package zookeeper
 
 import (
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/config_center"
-	"github.com/mosn/registry/dubbo/config_center/parser"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/config_center"
+	"github.com/symcn/registry/dubbo/config_center/parser"
 )
 
 type zookeeperDynamicConfigurationFactory struct {

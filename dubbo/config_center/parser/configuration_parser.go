@@ -23,10 +23,10 @@ import (
 
 	"github.com/magiconair/properties"
 
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
 	"gopkg.in/yaml.v2"
 )
 

@@ -24,13 +24,13 @@ import (
 
 	"github.com/dubbogo/go-zookeeper/zk"
 	gxset "github.com/dubbogo/gost/container/set"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/config_center"
-	"github.com/mosn/registry/dubbo/config_center/parser"
-	"github.com/mosn/registry/dubbo/remoting/zookeeper"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/config_center"
+	"github.com/symcn/registry/dubbo/config_center/parser"
+	"github.com/symcn/registry/dubbo/remoting/zookeeper"
 )
 
 const (

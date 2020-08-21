@@ -25,9 +25,9 @@ import (
 
 	"github.com/dubbogo/go-zookeeper/zk"
 
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
 )
 
 const (

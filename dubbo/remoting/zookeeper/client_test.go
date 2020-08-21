@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/dubbogo/go-zookeeper/zk"
-	"github.com/mosn/registry/dubbo/common/logger"
 	"github.com/stretchr/testify/assert"
+	"github.com/symcn/registry/dubbo/common/logger"
 )
 
 func verifyEventStateOrder(t *testing.T, c <-chan zk.Event, expectedStates []zk.State, source string) {

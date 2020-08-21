@@ -24,9 +24,9 @@ import (
 	"time"
 
 	"github.com/dubbogo/go-zookeeper/zk"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/remoting"
 	"github.com/stretchr/testify/assert"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/remoting"
 )
 
 var (

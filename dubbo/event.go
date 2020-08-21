@@ -22,8 +22,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/remoting"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/remoting"
 )
 
 func init() {

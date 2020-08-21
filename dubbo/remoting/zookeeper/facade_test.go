@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/dubbogo/go-zookeeper/zk"
-	"github.com/mosn/registry/dubbo/common"
 	"github.com/stretchr/testify/assert"
+	"github.com/symcn/registry/dubbo/common"
 )
 
 type mockFacade struct {

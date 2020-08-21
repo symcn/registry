@@ -21,8 +21,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mosn/registry/dubbo/config_center"
-	"github.com/mosn/registry/dubbo/remoting"
+	"github.com/symcn/registry/dubbo/config_center"
+	"github.com/symcn/registry/dubbo/remoting"
 )
 
 // CacheListener ...

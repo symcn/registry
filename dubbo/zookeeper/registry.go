@@ -25,12 +25,12 @@ import (
 	"time"
 
 	"github.com/dubbogo/go-zookeeper/zk"
-	registry "github.com/mosn/registry/dubbo"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/remoting/zookeeper"
 	perrors "github.com/pkg/errors"
+	registry "github.com/symcn/registry/dubbo"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/remoting/zookeeper"
 )
 
 const (
@@ -309,4 +309,15 @@ func (r *zkRegistry) getCloseListener(conf *common.URL) (*RegistryConfigurationL
 	listener.Close()
 
 	return zkListener, nil
+}
+
+func (r *zkRegistry) ConnectState() bool {
+	r.cltLock.Lock()
+	defer r.cltLock.Unlock()
+
+	if r.client == nil {
+		return false
+	}
+
+	return r.client.Conn.State() == zk.StateHasSession
 }

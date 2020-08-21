@@ -20,7 +20,7 @@ package config_center
 import (
 	"fmt"
 
-	"github.com/mosn/registry/dubbo/remoting"
+	"github.com/symcn/registry/dubbo/remoting"
 )
 
 // ConfigurationListener ...

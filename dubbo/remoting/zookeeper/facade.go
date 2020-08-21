@@ -21,9 +21,9 @@ import (
 	"sync"
 
 	"github.com/dubbogo/getty"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/logger"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/logger"
 )
 
 type ZkClientFacade interface {

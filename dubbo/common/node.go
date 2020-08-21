@@ -22,4 +22,5 @@ type Node interface {
 	GetUrl() URL
 	IsAvailable() bool
 	Destroy()
+	ConnectState() bool
 }

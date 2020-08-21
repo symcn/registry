@@ -25,11 +25,11 @@ import (
 
 	"github.com/dubbogo/getty"
 	"github.com/dubbogo/go-zookeeper/zk"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/remoting"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/remoting"
 )
 
 var (

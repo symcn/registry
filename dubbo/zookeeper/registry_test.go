@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/remoting/zookeeper"
 	"github.com/stretchr/testify/assert"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/remoting/zookeeper"
 )
 
 func Test_Register(t *testing.T) {

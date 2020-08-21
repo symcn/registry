@@ -21,13 +21,13 @@ import (
 	"strings"
 	"sync"
 
-	registry "github.com/mosn/registry/dubbo"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/config_center"
-	"github.com/mosn/registry/dubbo/remoting"
-	zk "github.com/mosn/registry/dubbo/remoting/zookeeper"
 	perrors "github.com/pkg/errors"
+	registry "github.com/symcn/registry/dubbo"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/config_center"
+	"github.com/symcn/registry/dubbo/remoting"
+	zk "github.com/symcn/registry/dubbo/remoting/zookeeper"
 )
 
 // RegistryDataListener contains all URL information subscribed by zookeeper registry

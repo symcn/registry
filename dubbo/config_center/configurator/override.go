@@ -22,9 +22,9 @@ import (
 
 	gxset "github.com/dubbogo/gost/container/set"
 	gxnet "github.com/dubbogo/gost/net"
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/config_center"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/config_center"
 )
 
 func newConfigurator(url *common.URL) config_center.Configurator {

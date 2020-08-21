@@ -20,8 +20,8 @@ package dubbo
 import (
 	"time"
 
-	"github.com/mosn/registry/dubbo/common"
-	"github.com/mosn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common/logger"
 	"go.uber.org/atomic"
 )
 
@@ -132,4 +132,8 @@ func (*listener) Close() {
 // MockEvent ...
 func (r *MockRegistry) MockEvent(event *ServiceEvent) {
 	r.listener.listenChan <- event
+}
+
+func (r *MockRegistry) ConnectState() bool {
+	return true
 }

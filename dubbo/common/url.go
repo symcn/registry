@@ -30,9 +30,9 @@ import (
 
 	gxset "github.com/dubbogo/gost/container/set"
 	"github.com/jinzhu/copier"
-	"github.com/mosn/registry/dubbo/common/constant"
 	perrors "github.com/pkg/errors"
 	uuid "github.com/satori/go.uuid"
+	"github.com/symcn/registry/dubbo/common/constant"
 )
 
 /////////////////////////////////

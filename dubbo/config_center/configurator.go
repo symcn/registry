@@ -18,7 +18,7 @@
 package config_center
 
 import (
-	"github.com/mosn/registry/dubbo/common"
+	"github.com/symcn/registry/dubbo/common"
 )
 
 // Configurator ...

@@ -25,11 +25,11 @@ import (
 
 	"github.com/dubbogo/go-zookeeper/zk"
 
-	"github.com/mosn/registry/dubbo/common/constant"
-	"github.com/mosn/registry/dubbo/common/logger"
-	"github.com/mosn/registry/dubbo/remoting"
-	"github.com/mosn/registry/dubbo/remoting/zookeeper"
 	perrors "github.com/pkg/errors"
+	"github.com/symcn/registry/dubbo/common/constant"
+	"github.com/symcn/registry/dubbo/common/logger"
+	"github.com/symcn/registry/dubbo/remoting"
+	"github.com/symcn/registry/dubbo/remoting/zookeeper"
 )
 
 // Entry contain a service instance
