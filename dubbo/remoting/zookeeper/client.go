@@ -255,7 +255,7 @@ func (z *ZookeeperClient) HandleZkEvent(session <-chan zk.Event) {
 			switch (int)(event.State) {
 			case (int)(zk.StateDisconnected):
 				logger.Warnf("zk{addr:%s} state is StateDisconnected, so close the zk client{name:%s}.", z.ZkAddrs, z.name)
-				z.stop()
+				// fix with https://github.com/apache/dubbo-go/pull/985
 				z.Lock()
 				conn := z.Conn
 				z.Conn = nil
@@ -263,6 +263,7 @@ func (z *ZookeeperClient) HandleZkEvent(session <-chan zk.Event) {
 				if conn != nil {
 					conn.Close()
 				}
+				z.stop()
 				return
 			case (int)(zk.EventNodeDataChanged), (int)(zk.EventNodeChildrenChanged):
 				logger.Infof("zkClient{%s} get zk node changed event{path:%s}", z.name, event.Path)
